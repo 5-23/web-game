@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    
+    // let point = Number(prompt());
+    // let rank = 'F';
+    
+    
+    // if (point > 100 || point < 0){ rank = "error";  }
+    // else if (point >= 90){rank = 'A';}
+    // else if (point >= 80){rank = 'B';}
+    // else if (point >= 70){rank = 'C';}
+    // else if (point >= 60){rank = 'D';}
+    // console.log(rank)
+
+    /*------------------*/
+
+    // let year = Number(prompt());
+
+    // if (year >= 1 && year <= 4000) {
+    //     let res = 0;
+    
+    //     if (((year%4 == 0) && (year%100 != 0)) || (year%400 == 0)){res = 1;}
+    
+    //     console.log(res);
+    // }else {
+    //     console.log("error")
+    // }
+
+    /*------------------*/
+
+    // let allam = [0, 0];
+    
+    // let arr = prompt().split(" ");
+    // allam[0] = Number(arr[0]);
+    // allam[1] = Number(arr[1]);
+    // if ((0 <= allam[0] && allam[0] <= 23) && (0 <= allam[1] && allam[1] <= 59)){
+    //     allam[1] -= 45;
+    //     if (allam[1] < 0){
+    //         allam[0] -= 1;
+    //         allam[1] += 60;
+    //     }
+    //     if (allam[0] < 0){
+    //         allam[0] = 23
+    //     }
+    
+    //     console.log(allam[0], allam[1])
+    // }else{
+    //     console.log("error")
+    // }
+
+    /*------------------*/
+
+
+    let a = prompt().split(" ").map(x => Number(x));
+
+    if ((0 <= a[0] && a[0] <= 23) && (0 <= a[1] && a[1] <= 59)){
+        a[1] += prompt().split(" ").map(x => Number(x))[0];
+        if (0 <= a[1] && a[1] <= 1_000){
+            while (a[1] >= 60){
+                a[1] -= 60;
+                a[0] += 1;
+                if (a[0] >= 24){
+                    a[0] -= 24
+                }
+            }
+            console.log(a[0], a[1])
+        }else{
+            console.log("error")
+        }
+    }else{
+        console.log("error")
+    }
+</script>
