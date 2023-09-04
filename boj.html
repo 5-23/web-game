@@ -61,23 +61,79 @@
     /*------------------*/
 
 
-    let a = prompt().split(" ").map(x => Number(x));
+    // let a = prompt().split(" ").map(x => Number(x));
 
-    if ((0 <= a[0] && a[0] <= 23) && (0 <= a[1] && a[1] <= 59)){
-        a[1] += prompt().split(" ").map(x => Number(x))[0];
-        if (0 <= a[1] && a[1] <= 1_000){
-            while (a[1] >= 60){
-                a[1] -= 60;
-                a[0] += 1;
-                if (a[0] >= 24){
-                    a[0] -= 24
-                }
-            }
-            console.log(a[0], a[1])
-        }else{
-            console.log("error")
-        }
-    }else{
-        console.log("error")
-    }
+    // if ((0 <= a[0] && a[0] <= 23) && (0 <= a[1] && a[1] <= 59)){
+    //     a[1] += prompt().split(" ").map(x => Number(x))[0];
+    //     if (0 <= a[1] && a[1] <= 1_000){
+    //         while (a[1] >= 60){
+    //             a[1] -= 60;
+    //             a[0] += 1;
+    //             if (a[0] >= 24){
+    //                 a[0] -= 24
+    //             }
+    //         }
+    //         console.log(a[0], a[1])
+    //     }else{
+    //         console.log("error")
+    //     }
+    // }else{
+    //     console.log("error")
+    // }
+
+    /*------------------*/
+
+    // let ans = Number(prompt());
+    // if (ans > 0){
+    //     let res = 0
+    //     let n = Number(prompt());
+    //     if (n > 0){
+        
+    //         for (let i = 0; i < n; i++){
+    //             let q = prompt().split(" ").map(x => Number(x));
+    //             if (q[0] * q[1] > 0){
+    //                 res += q[0] * q[1]
+    //             }else{
+    //                 res += 0
+    //                 break;
+    //             }
+    //         }
+    //         if (!res){
+    //             console.log(ans == res? "Yes": "No")
+    //         }else{
+    //             console.log("error")
+    //         }
+    //     }else{
+    //         console.log("error")
+    //     }
+    // }
+
+    /*------------------*/
+
+
+    // while(1) {
+    //     let arr = prompt().split(" ").map(x => Number(x));
+    //     if (0 >= arr[0] || arr[1] >= 10) {console.log("error"); break}
+    //     if (!arr[0] && !arr[1]){
+    //         break;
+    //     }
+    //     console.log(arr[0] + arr[1])
+    // }
+
+    /*------------------*/
+
+    const add = (a , b) => a + b;
+    const sub = (a , b) => a - b;
+    const mul = (a , b) => a * b;
+    const div = (a , b) => a / b;
+
+    let a = Number(prompt("a"))
+    let b = Number(prompt("b"))
+    
+    console.log(add(a, b))
+    console.log(sub(a, b))
+    console.log(mul(a, b))
+    console.log(div(a, b))
+
+    
 </script>
