@@ -145,7 +145,7 @@ let loop = () => {
   if (isloop) {
     speed += 0.001;
     ctx.rotate(-Math.sin(speed - 0.001) * 0.1);
-    ctx.clearRect(-1000, -100, 5000, 1000);
+    ctx.clearRect(-1000, -1000, 5000, 5000);
     ctx.rotate(Math.sin(speed) * 0.1);
     ctx.fillStyle = "#f0c6c6";
     ctx.fillRect(-1000, defaultY + 100, 5000, 1000);
